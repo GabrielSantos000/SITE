@@ -1,0 +1,178 @@
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+        <meta charset="UTF-8">
+        <title>Cerveja OXENTE</title>
+        <style>
+            body{
+                background-image:linear-gradient(to bottom, #ff4912, #fe9800);
+                margin: 0px;
+            }
+
+            @font-face {
+                font-family:'Codec Extrabold';
+                src: url('fontes/codec-pro-extrabold.ttf') format('truetype'); 
+                font-style: normal;
+                font-weight: normal;
+            }
+            </style>
+    </head>
+<!--CABEÇALHO-->
+    <body>
+        <header class="menu-principal">
+            <div class="topo">
+                <div class="logo">
+                    <img src="./img/logo.png">
+                </div>
+                <div class="tópicos">
+                    <ul>
+                        <li class="garrafas"><a href="#pag2"> <img src="./img/garrafas.svg" height="40px" width="40px"></a></li>
+                        <li class="img"><a href="#pag3"> <img src="./img/images.svg" height="35px" width="35px"></a></li>
+                        <li class="info"><a href="#pag4"> <img src="./img/sobre-nós.svg" height="35px" width="35px"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<!--PRIMEIRA PÁGINA-->
+        <div class="imagem">
+            <img src="img/logo-ba.png" alt="Logo da nossa cerveja">  
+        </div> 
+        <div class="texto">
+            <h1 class="tx1">
+                UMA CERVEJA DA</br></h1>
+            <h1 class="tx2">
+                BAHIA</br></h1>
+            <h1 class="tx3">
+                UMA CERVEJA DO</br></h1>
+            <h1 class="tx4">
+                NORDESTE</br></h1>
+            <h1 class="tx5">
+                É A CERVEJA</br></h1>
+            <h1 class="tx6">
+                OXENTE!!!</h1>
+        </div>
+<!--SEGUNDA PÁGINA-->
+        <div class="sobre" id="pag2">
+            <img class="img-e" src="./img/mesa cerveja.png" height="550px" width="296px">
+            <img class="img-d" src="./img/garrafa-circulo.png" height="540px" width="335px">
+            <p> Essa é nossa <p1>cerveja artesanal</p1> fabricada por universitários da UNIFACS (Universidade Salvador).</br>
+            </br>
+            Equipe composta por <p2>8 integrantes participativos e ativos</p2> no desenvolvimento dessa cerveja.</p>
+        </div>
+<!--TERCEIRA PÁGINA-->
+        <!--Parte JavaScript-->
+    <script>
+        let contador = 1;
+
+        setInterval(function(){
+            document.getElementById('foto'+ contador).checked = true
+            contador ++;
+
+            if(contador > 10) {
+                contador = 1
+            }
+
+        }, 3000)
+    </script>
+        <!----------------------->
+        <div class="h4" id="pag3">
+            Fotos do processo!
+        </div>
+        <div class="content">
+            <div class="slides">
+                <input class="input" type="radio" name="slides" id="foto1" checked>
+                <input class="input" type="radio" name="slides" id="foto2">
+                <input class="input" type="radio" name="slides" id="foto3">
+                <input class="input" type="radio" name="slides" id="foto4">
+                <input class="input" type="radio" name="slides" id="foto5">
+                <input class="input" type="radio" name="slides" id="foto6">
+                <input class="input" type="radio" name="slides" id="foto7">
+                <input class="input" type="radio" name="slides" id="foto8">
+                <input class="input" type="radio" name="slides" id="foto9">
+                <input class="input" type="radio" name="slides" id="foto10">
+
+                <div class="foto f1">
+                    <img src="./img/img-processos/01 - organização.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/02 - aquecimento.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/03 - malte.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/04 - filtração.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/05 - mostura.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/06 - balde.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/07 - fermento.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/08 - fermentação.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/09 - filtração.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="./img/img-processos/10 - engarrafamento.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <label class="barra" for="foto1"></label>
+            <label class="barra" for="foto2"></label>
+            <label class="barra" for="foto3"></label>
+            <label class="barra" for="foto4"></label>
+            <label class="barra" for="foto5"></label>
+            <label class="barra" for="foto6"></label>
+            <label class="barra" for="foto7"></label>
+            <label class="barra" for="foto8"></label>
+            <label class="barra" for="foto9"></label>
+            <label class="barra" for="foto10"></label>
+        </div>
+<!--QUARTA PÁGINA-->
+        <div class="textobox" id="pag4">
+            INFORMAÇÕES DA CERVEJA
+        </div>
+        <div class="simbolos">
+            <img src="img/cevada.png" height="100px" width="100px">
+            <img src="img/lúpuloo.png" height="90px" width="90px">
+            <img src="img/termômetro.png" height="100px" width="70px">
+        </div>
+        <div class="texto2">
+            <p>7 - 14 EBC</p>
+            <p>15 - 30 IBU</p>
+            <p>3°C - 6°C</p>
+        </div>
+        <div class="céu">
+            <img src="./img/nuvem.png" alt="nuvem">
+            <img src="./img/sol.png" alt="sol" width="117.7px" height="120px">
+            <img src="./img/nuvem1.png" alt="nuvem">
+        </div>
+        <div class="Cervejaria">
+            <img src="./img/menina.png" alt="menina" width="169.5px" height="200px">
+            <h3>Cervejaria Oxi!</br></br>
+                Projeto da turma da UNIFACS</br>
+                (Universidade Salvador)</h3>
+        </div>
+        <div class="latinhas">
+            <img src="./img/latinhas.png" width="435px" height="322px">
+        </div>
+    </body>
+    <footer>
+        <div class="avisos">
+            <img src="./img/+18.svg" alt="+18" height="80px" width="80px">
+            <img src="./img/dirigir.png" alt="Proibido dirigir embreagado" height="80px" width="80px">
+            <img src="./img/grávida.png" alt="Proibido para gestantes" height="80px" width="80px">
+            <img src="./img/beba menos.png" alt="Beba menos, beba melhor" height="100px" width="80px">
+        </div>
+        <div class="Aproveite">
+            APROVEITE COM MODERAÇÃO E BOM GOSTO!!!
+        </div>
+    </footer>
+</html>

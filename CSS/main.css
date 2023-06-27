@@ -1,0 +1,256 @@
+/*-----------------Cabeçalho-----------------*/
+.logo {
+    padding: 15px;
+    float: left;
+    margin-left: 50px;
+}
+.tópicos ul li {
+    display: block;
+    float: right;
+    padding: 3%;
+    overflow: hidden;
+}
+.info:hover img{
+    transition: 400ms;
+    scale: 120%
+}
+
+.img:hover img{
+    transition: 400ms;
+    scale: 120%
+}
+
+.garrafas:hover img{
+    transition: 400ms;
+    scale: 120%
+}
+
+/*-----------------Body1(texto e imagem)-----------------*/
+.texto{
+    padding-top: 12%;
+    margin-left: 100px;
+    line-height: 20px;
+    width: 45%;
+    font-family: 'Codec Extrabold','Times','Serif';
+    font-size: 1.75em;
+}
+.tx1,.tx3,.tx5 {
+    color: white;
+}
+.tx2,.tx4,.tx6{
+    color: rgb(125, 0, 0);
+}
+.imagem{
+    width: 45%;
+    display: flex;
+    float: right;
+    filter: drop-shadow(10px 10px 15px rgb(179, 51, 0))
+}
+/*-----------------Body2(texto e imagem)-----------------*/
+.sobre{
+    margin-top: 100px;
+    display: block;
+}
+.sobre p{
+    font-family: 'Codec Extrabold','Times','Serif';
+    font-size: 45px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: text-bottom;
+    width: 39%;
+    margin: 90px;
+    color: white
+}
+.sobre p1,p2{
+    color: rgb(125, 0, 0);
+}
+.img-e{
+    display: inline;
+    box-align: left;
+    margin-left: 0px;
+    filter: drop-shadow(10px 10px 25px rgb(109, 62, 1))
+}
+.img-d{
+    display: inline;
+    box-align: right;
+    margin-right: 0px;
+    float: right;
+}
+/*-----------------Body3(texto e imagem)-----------------*/
+.h4{
+    font-family: 'Codec Extrabold','Times','Serif';
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: rgb(125, 0, 0);
+}
+.content{
+    height: 520px;
+    width: 292px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top:0px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(10px 10px 10px rgb(201, 30, 0));
+}
+.content .foto img{
+    height: 100%;
+    width: auto;
+}
+.navigation{
+    display: flex;
+    position: absolute;
+    left: 522px;
+    margin-top: 70px;
+}
+.barra{
+    height: 15px;
+    width: 15px;
+    border: 2px solid rgb(87, 32, 0);
+    border-radius: 100%;
+    margin: 6px;
+    cursor: pointer;
+}
+.barra:hover{
+    background-color: brown;
+}
+.input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 1000%;
+    height: 100%
+}
+.foto{
+    width:10%;
+    transition: .6s;
+
+}
+#foto1:checked ~ .f1{
+    margin-left: 0;
+}
+#foto2:checked ~ .f1{
+    margin-left: -10%;
+}
+#foto3:checked ~ .f1{
+    margin-left: -20%;
+}
+#foto4:checked ~ .f1{
+    margin-left: -30%;
+}
+#foto5:checked ~ .f1{
+    margin-left: -40%;
+}
+#foto6:checked ~ .f1{
+    margin-left: -50%;
+}
+#foto7:checked ~ .f1{
+    margin-left: -60%;
+}
+#foto8:checked ~ .f1{
+    margin-left: -70%;
+}
+#foto9:checked ~ .f1{
+    margin-left: -80%;
+}
+#foto10:checked ~ .f1{
+    margin-left: -90%;
+}
+/*-----------------Body4(texto e imagem)-----------------*/
+
+.textobox{
+    display: flex;
+    margin-left: 450px;
+    margin-top: 150px;
+    font-family:'Codec Extrabold';
+    font-size: 2em;
+    border: 2px solid black;
+    width: 34%;
+    height: 45px;
+    border-radius: 30px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.simbolos{
+    display: flex;
+    position: relative;
+    margin-top: 220px;
+    margin-left: 450px;
+    justify-content: space-around;
+    align-items: center;
+    width: 34%;
+}
+
+.texto2 {
+    display: block;
+    font-family: 'Codec Extrabold';
+    font-size: 1.5em;
+    margin-left: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 34%;
+}
+
+.texto2 p{
+    width: 25%;
+    text-align: center;
+}
+
+.céu {
+    display: flex;
+    margin-left: 450px;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cervejaria {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.cervejaria h3{
+    font-family: 'Codec Extrabold';
+    font-size: 2em;
+}
+
+.latinhas {
+    display: flex;
+    float: right;
+    position: relative;
+    width: 32%;
+    margin: 60px;
+    filter: drop-shadow(100px 50px 100px rgb(255, 0, 0));
+}
+
+
+.avisos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 90px;
+    margin-top: 300px;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aproveite{
+    display: flex;
+    margin-left: 90px;
+    margin-top:20px;
+    margin-bottom: 40px;
+    font-family: 'Codec Extrabold';
+    font-size: 1.5em;
+    justify-content: left;
+    text-align: center;
+}
